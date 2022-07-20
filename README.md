@@ -23,10 +23,6 @@ Kaggle-Learning - Kaggle Learn Dump
 
 LeetCode-Sync - Everything solved on LeetCode comes here
 
-PGA Capstone 1 - Diabetes Prediction
-
-PGA Capstone 2 - Blood Cell Image Classification
-
 Newton-MSc-Work - Backup for scripts used in coursework
 
 Coding-Interview-Roadmap - Sean Pershad leetcode list practice
