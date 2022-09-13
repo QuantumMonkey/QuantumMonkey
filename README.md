@@ -1,9 +1,13 @@
 <h1 align="center">Hi 👋, I'm Anand</h1>
-<h3 align="center">A passionate data scientist from India</h3>
+<h3 align="center">A passionate software developer turned data scientist from India</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=quantummonkey&label=Profile%20views&color=0e75b6&style=flat" alt="quantummonkey" /> </p>
 
 - 🌱 I’m currently learning **Computer Vision**
+
+- 📫 How to reach me **anandrajan.ds@gmail.com**
+
+- 📄 Know about my experiences [https://arc.dev/@anandrajan](https://arc.dev/@anandrajan)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
