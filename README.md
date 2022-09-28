@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=quantummonkey&label=Profile%20views&color=0e75b6&style=flat" alt="quantummonkey" /> </p>
 
-- 🌱 I’m currently learning **Computer Vision**
+- 🌱 I’m currently learning **Computer Vision, NLP,** and **Ops**
 
 
 - 📄 Know about my experiences [https://arc.dev/@anandrajan](https://arc.dev/@anandrajan)
