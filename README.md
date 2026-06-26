@@ -40,4 +40,4 @@
 ### 📊 GitHub Stats
 
 <!-- self-hosted: regenerated weekly by .github/workflows/profile-stats.yml, served by GitHub -->
-<img src="./assets/stats.svg" alt="Anand's GitHub stats" width="500" />
+<img src="./assets/stats.svg" alt="Anand's GitHub stats" width="100%" />

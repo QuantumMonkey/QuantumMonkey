@@ -106,7 +106,7 @@ async function main() {
   ];
 
   // ---- render SVG ----
-  const W = 500, P = 22;
+  const W = 880, P = 26;
   const barW = W - P * 2;
   let x = P;
   const segs = langs
@@ -119,7 +119,7 @@ async function main() {
     .join("");
   const legend = langs
     .map((l, i) => {
-      const lx = P + (i % 3) * 155;
+      const lx = P + (i % 3) * (barW / 3);
       const ly = 158 + Math.floor(i / 3) * 18;
       const c = LANG_COLOR[l.name] || LANG_COLOR.Other;
       return `<circle cx="${lx + 4}" cy="${ly - 4}" r="4" fill="${c}"/><text x="${lx + 14}" y="${ly}" class="lg">${esc(l.name)} ${l.pct.toFixed(0)}%</text>`;
