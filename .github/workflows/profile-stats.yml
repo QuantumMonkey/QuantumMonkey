@@ -1,0 +1,42 @@
+name: profile-stats
+
+# Regenerates assets/stats.svg from your own GitHub data and commits it back.
+# The card is then served by GitHub itself — no third-party service at view time.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # every Monday 06:00 UTC
+  workflow_dispatch: {} # run on demand from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate stats SVG
+        env:
+          # STATS_TOKEN (a read-only PAT) counts your PRIVATE contributions too.
+          # Without it, falls back to the Action token (public activity only).
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || github.token }}
+          GH_USER: ${{ github.repository_owner }}
+        run: node scripts/profile-stats.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- assets/stats.svg; then
+            git add assets/stats.svg
+            git commit -m "chore: refresh profile stats"
+            git push
+          else
+            echo "No change in stats.svg"
+          fi
