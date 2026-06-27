@@ -54,13 +54,29 @@ function esc(s) {
 async function main() {
   const user = await rest(`/users/${USER}`);
 
-  // All repos (paginate).
-  let repos = [];
-  for (let page = 1; ; page++) {
-    const batch = await rest(`/users/${USER}/repos?per_page=100&page=${page}`);
-    repos = repos.concat(batch);
-    if (batch.length < 100) break;
+  // Prefer the authenticated owner list (includes PRIVATE repos) so the card
+  // reflects real output — only aggregate language %/counts are shown, never
+  // repo names. Falls back to the public list if the token isn't user-scoped
+  // (e.g. a plain Actions GITHUB_TOKEN), in which case stats are public-only.
+  async function getRepos() {
+    const paginate = async (base) => {
+      let out = [];
+      for (let page = 1; ; page++) {
+        const batch = await rest(`${base}&page=${page}`);
+        out = out.concat(batch);
+        if (batch.length < 100) break;
+      }
+      return out;
+    };
+    try {
+      const owned = await paginate(`/user/repos?affiliation=owner&per_page=100`);
+      if (owned.length) return owned;
+    } catch {
+      /* token not user-scoped — fall back to public */
+    }
+    return paginate(`/users/${USER}/repos?per_page=100`);
   }
+  const repos = await getRepos();
   const original = repos.filter((r) => !r.fork);
 
   // Language mix weighted by REPO COUNT, not bytes. Byte-weighting lets Jupyter
@@ -149,7 +165,7 @@ async function main() {
 <text x="${P}" y="34" class="title">${esc(user.name || USER)} &#183; @${esc(USER)}</text>
 <text x="${P}" y="50" class="sub">building privacy-first, on-device apps &#183; ex ML / AI</text>
 ${tiles}
-<text x="${P}" y="118" class="lbl">language journey &#183; ML &#8594; on-device</text>
+<text x="${P}" y="118" class="lbl">language mix &#183; across all repos</text>
 ${segs}
 ${legend}
 <text x="${W - P}" y="${H_ - 12}" text-anchor="end" class="sub">updated ${updated} &#183; current streak ${streak}d</text>
