@@ -11,9 +11,9 @@
 <rect class="bg" x="0.5" y="0.5" width="879" height="209" rx="10"/>
 <text x="26" y="34" class="title">Anubis Lab &#183; @QuantumMonkey</text>
 <text x="26" y="50" class="sub">building privacy-first, on-device apps &#183; ex ML / AI</text>
-<text x="26" y="70" class="num">6</text><text x="26" y="88" class="cap">years on GitHub</text><text x="233" y="70" class="num">15</text><text x="233" y="88" class="cap">original repos</text><text x="440" y="70" class="num">10</text><text x="440" y="88" class="cap">followers</text><text x="647" y="70" class="num">353</text><text x="647" y="88" class="cap">contributions / yr</text>
+<text x="26" y="70" class="num">6</text><text x="26" y="88" class="cap">years on GitHub</text><text x="233" y="70" class="num">16</text><text x="233" y="88" class="cap">original repos</text><text x="440" y="70" class="num">10</text><text x="440" y="88" class="cap">followers</text><text x="647" y="70" class="num">356</text><text x="647" y="88" class="cap">contributions / yr</text>
 <text x="26" y="118" class="lbl">language mix &#183; across all repos</text>
-<rect x="26.0" y="128" width="236.6" height="10" fill="#3572A5"/><rect x="262.6" y="128" width="236.6" height="10" fill="#3178C6"/><rect x="499.1" y="128" width="236.6" height="10" fill="#F1E05A"/><rect x="735.7" y="128" width="118.3" height="10" fill="#E34C26"/>
-<circle cx="30" cy="154" r="4" fill="#3572A5"/><text x="40" y="158" class="lg">Python 29%</text><circle cx="306" cy="154" r="4" fill="#3178C6"/><text x="316" y="158" class="lg">TypeScript 29%</text><circle cx="582" cy="154" r="4" fill="#F1E05A"/><text x="592" y="158" class="lg">JavaScript 29%</text><circle cx="30" cy="172" r="4" fill="#E34C26"/><text x="40" y="176" class="lg">HTML 14%</text>
-<text x="854" y="198" text-anchor="end" class="sub">updated 2026-07-06 &#183; current streak 0d</text>
+<rect x="26.0" y="128" width="310.5" height="10" fill="#3572A5"/><rect x="336.5" y="128" width="207.0" height="10" fill="#3178C6"/><rect x="543.5" y="128" width="207.0" height="10" fill="#F1E05A"/><rect x="750.5" y="128" width="103.5" height="10" fill="#E34C26"/>
+<circle cx="30" cy="154" r="4" fill="#3572A5"/><text x="40" y="158" class="lg">Python 38%</text><circle cx="306" cy="154" r="4" fill="#3178C6"/><text x="316" y="158" class="lg">TypeScript 25%</text><circle cx="582" cy="154" r="4" fill="#F1E05A"/><text x="592" y="158" class="lg">JavaScript 25%</text><circle cx="30" cy="172" r="4" fill="#E34C26"/><text x="40" y="176" class="lg">HTML 13%</text>
+<text x="854" y="198" text-anchor="end" class="sub">updated 2026-07-07 &#183; current streak 1d</text>
 </svg>
