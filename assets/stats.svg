@@ -15,5 +15,5 @@
 <text x="26" y="118" class="lbl">language mix &#183; across all repos</text>
 <rect x="26.0" y="128" width="276.0" height="10" fill="#3572A5"/><rect x="302.0" y="128" width="276.0" height="10" fill="#F1E05A"/><rect x="578.0" y="128" width="184.0" height="10" fill="#3178C6"/><rect x="762.0" y="128" width="92.0" height="10" fill="#E34C26"/>
 <circle cx="30" cy="154" r="4" fill="#3572A5"/><text x="40" y="158" class="lg">Python 33%</text><circle cx="306" cy="154" r="4" fill="#F1E05A"/><text x="316" y="158" class="lg">JavaScript 33%</text><circle cx="582" cy="154" r="4" fill="#3178C6"/><text x="592" y="158" class="lg">TypeScript 22%</text><circle cx="30" cy="172" r="4" fill="#E34C26"/><text x="40" y="176" class="lg">HTML 11%</text>
-<text x="854" y="198" text-anchor="end" class="sub">updated 2026-07-18 &#183; current streak 0d</text>
+<text x="854" y="198" text-anchor="end" class="sub">updated 2026-07-19 &#183; current streak 0d</text>
 </svg>
